@@ -17,9 +17,9 @@ from './ProjectInfo';
 
 import fashionWebsite from '../../../images/fashionWebsite.jpg';
 import toastBanner from '../../../images/fashionWebsiteBanner.jpg';
-import healthWebsite from '../../../images/healthWebsite3.jpg';
+import healthWebsite from '../../../images/healthWebsite.jpg';
 import healthBanner from '../../../images/healthWebsiteBanner.png';
-import pilatesWebsite from '../../../images/pilatesWebsite2.jpg';
+import pilatesWebsite from '../../../images/pilatesWebsite.jpg';
 import pilatesBanner from '../../../images/tustinPilatesBanner.jpg';
 import schoolWebsite from '../../../images/schoolWebsite.png';
 
