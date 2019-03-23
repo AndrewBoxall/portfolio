@@ -7,7 +7,7 @@
 3. Clean up CSS
 4. Add https support
 5. Change some images/graphics, like header background
-6. Swap <img> for <picture>
+6. Swap img tags for picture tags
 7. Add Mongo DB and change some hard written parts to pull from DB instead
 8. Fix 0.5s delay between project modal opening and img on it appearing
 9. Add in encrypting user data on submitting email form to backend
