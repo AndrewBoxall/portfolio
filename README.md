@@ -12,4 +12,4 @@
 8. Fix 0.5s delay between project modal opening and img on it appearing
 9. Add in encrypting user data on submitting email form to backend
 10. Sanatise user imput for forms
-11. 
+11. Flash a success notification when email or other form submit buttons pressed
