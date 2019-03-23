@@ -1,0 +1,107 @@
+#contact-email-form {
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 60%;
+}
+#email-body-input {
+  height: 150px;
+}
+#send-email {
+  background-color: #3498db;
+  border: 2px solid black;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+.fa-email-icon {
+  font-size: 22px;
+  width: 30px !important;
+  margin-right: 5px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+.floating-label {
+  background-color: white;
+  box-sizing: border-box;
+  padding: 0px 5px;
+  margin: 0 0 0 10px;
+  position: absolute;
+  top: 9px;
+  left: 16px;
+  transition: top 0.15s;
+  -webkit-transition: top 0.15s;
+}
+.email-data-wrapper {
+  box-sizing: border-box;
+  margin-top: 20px;
+  position: relative;
+  width: 100%;
+}
+.email-form-input {
+  background-color: none;
+  border: 2px solid black;
+  box-sizing: border-box;
+  outline: none;
+  position: relative;
+  font-size: 18px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px 30px;
+}
+.email-form-input:focus {
+  border: 2px solid #3498db;
+}
+.email-form-input:focus + label {
+  color: #3498db;
+  top: -11px;
+}
+.email-form-input:focus ~ .fa-email-icon {
+  color: #3498db;
+}
+.email-form-input:valid + label {
+  top: -11px;
+}
+
+.second-child {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 600px) {
+  #contact-email-form {
+    margin: 0;
+    width: 100%;
+  }
+  .second-child {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #contact-email-form {
+    margin: 0;
+    width: 100%;
+  }
+  .second-child {
+    margin-left: 0px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #contact-email-form {
+    margin-right: 40px;
+
+    width: 60%
+  }
+  .flex-row-container {
+    flex-wrap: nowrap;
+  }
+  .second-child {
+    margin-left: 5px;
+  }
+}

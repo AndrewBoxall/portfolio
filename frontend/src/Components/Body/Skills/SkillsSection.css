@@ -1,0 +1,47 @@
+#skills-section {
+  background-color: #161616;
+  box-sizing: border-box;
+  color: white;
+  width: 100%;
+}
+#skills-section h2 {
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+#skills-section p {
+  color: black;
+  text-align: center;
+  width: 100%;
+}
+#top-background {
+  background-color: black;
+  height: 200px;
+  position: relative;
+  width: 100%;
+}
+#bottom-background {
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+#middle-background {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 10%;
+  padding: 20px;
+  position: relative;
+  top: -450px;
+}
+.container-row {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.container-row div {
+  background-color: #db435f;
+  color: white;
+  margin: 2px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}

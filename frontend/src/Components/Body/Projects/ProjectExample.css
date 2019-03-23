@@ -1,0 +1,86 @@
+.fa-icon-eye {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  display: none;
+}
+.project-container {
+  background-color: black;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  display: inline;
+  cursor: pointer;
+  margin: 0 20px 70px 0;
+  position: relative;
+  float: left;
+  flex-grow: 1;
+}
+.project-container:hover .project-thumbnail-img,
+.project-container:hover .project-info-wrapper {
+  opacity: 0.4;
+}
+.project-container:hover {
+  border-bottom: 2px solid grey;
+}
+.project-container:hover .fa-icon-eye {
+  display: block;
+  opacity: 1;
+}
+.project-info-wrapper {
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.project-info-wrapper > h3 {
+  margin: 0;
+}
+
+.project-thumbnail-img {
+  background-color: black;
+  margin: 0;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .project-container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  .project-container {
+    max-width: 47%;
+  }
+  .project-thumbnail-img {
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .project-container {
+    max-width: 47%;
+  }
+  .project-thumbnail-img {
+    height: 280px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .project-container {
+    max-width: 30%;
+  }
+  .project-thumbnail-img {
+    height: 250px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  .project-container {
+    max-width: 23%;
+  }
+  .project-thumbnail-img {
+    height: 220px;
+  }
+}

@@ -1,0 +1,28 @@
+#footer {
+  background-color: black;
+  border-top: 1px solid white;
+  display: block;
+  margin: 0 1%;
+  padding: 20px 0;
+}
+.col-1 {
+  float: left;
+  width: 7%;
+  min-width: 120px;
+}
+.col-2 {
+  float: left;
+  width: 25%;
+}
+.return-links ul {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 0px;
+}
+.return-links ul li a {
+  color: white;
+  text-decoration: none;
+}
+.return-links ul li a:hover {
+  color: #f7e351;
+}

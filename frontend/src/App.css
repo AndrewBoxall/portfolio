@@ -1,0 +1,8 @@
+/* App.css contains global DOM css */
+body {
+  background-color: black;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}

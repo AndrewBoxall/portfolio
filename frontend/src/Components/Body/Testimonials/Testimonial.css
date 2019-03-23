@@ -1,0 +1,92 @@
+.testimonial {
+  align-items: center;
+  background-color: white;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 5px;
+  max-width: 100vw;
+  padding: 50px 10vw;
+}
+.testimonial div {
+  box-sizing: border-box;
+  width: 100%;
+}
+.testimonial-wrapper {
+  display: block;
+  width: 1920px;
+  float: left;
+}
+.testimonial-text-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+}
+.testimonial-image-wrapper {
+  box-sizing: border-box;
+  width: 100%;
+}
+.testimonial-img {
+  border-radius: 50%;
+  display: block;
+  width: 70%;
+  height: auto;
+  max-width: 320px;
+  margin-right: 50px;
+  float: right;
+}
+.testimonial-name {
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  width: 70%;
+  clear: right;
+  margin: 0;
+  padding: 10px 10px 0 0;
+  text-align: right;
+}
+.testimonial-quote {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 5px 10%;
+  width: 90%;
+  margin: 0 5%;
+  text-align: center;
+}
+.testimonial-work {
+  box-sizing: border-box;
+  display: block;
+  font-size: 16px;
+  width: 70%;
+  margin: 0;
+  padding: 0 12px 0 0;
+  text-align: right;
+}
+.quote-mark {
+  display: inline-block;
+  color: #ffe016;
+  font-size: 1.5vw;
+  padding: 0 15%;
+}
+.float-right {
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  .font-scale {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .font-scale {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .font-scale {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .font-scale {
+    font-size: 30px;
+  }
+}

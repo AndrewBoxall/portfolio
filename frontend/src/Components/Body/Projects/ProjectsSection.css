@@ -1,0 +1,33 @@
+#projects-section {
+  background-color: black;
+  padding-left: 8%;
+  padding-right: 60px;
+  transition: padding 0.4s;
+  margin-bottom: 400px;
+}
+#projects-section > p {
+  color: white;
+  font-family: "Segoe UI", "Montserrat", Arial;
+  font-size: 16px;
+  margin: 0;
+}
+#projects-section > h2 {
+  color: white;
+  font-family: "Segoe UI", "Montserrat", Arial;
+  font-size: 30px;
+  margin: 0;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.project-examples-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+  #projects-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

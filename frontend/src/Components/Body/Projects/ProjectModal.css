@@ -1,0 +1,37 @@
+#explore {
+  background-color: black;
+  border: none;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px 5%;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 90%;
+}
+#explore:hover {
+  background-color: grey;
+  box-sizing: border-box;
+  color: black;
+}
+.project-modal-container {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  font-size: 14px;
+  left: 0;
+  margin: 25px 20%;
+  padding: 5px;
+  position: fixed;
+  top: 0;
+  width: 60%;
+  z-index: 1;
+}
+.project-modal-container p {
+  padding-left: 20px;
+}
+.project-modal-img {
+  height: 200px;
+  width: 100%;
+}

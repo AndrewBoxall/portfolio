@@ -1,0 +1,22 @@
+#site-header {
+  background-color: black;
+  background-image: url(../../images/index-page-banner-test.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-bottom: 200px;
+  width: 100%;
+}
+#about-information {
+  box-sizing: border-box;
+  color: white;
+  display: block;
+  font-family: "Segoe UI", "Montserrat", Arial;
+  font-size: 22px;
+  padding: 100px 8% 0 8%;
+}
+@media only screen and (max-width: 600px) {
+  #about-information {
+    padding: 100px 4% 0 4%
+  }
+}
