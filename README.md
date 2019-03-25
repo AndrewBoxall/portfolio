@@ -13,3 +13,5 @@
 9. Add in encrypting user data on submitting email form to backend
 10. Sanatise user imput for forms
 11. Flash a success notification when email or other form submit buttons pressed
+12. Fix when email input is invalid, the floating label will close down over the input and overlap words.
+13. Fix testimonial img and font size scaling for mobile.
