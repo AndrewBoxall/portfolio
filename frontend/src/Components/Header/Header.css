@@ -1,6 +1,6 @@
 #site-header {
   background-color: black;
-  background-image: url(../../images/index-page-banner-test.png);
+  background-image: url(../../images/website-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -14,6 +14,12 @@
   font-family: "Segoe UI", "Montserrat", Arial;
   font-size: 22px;
   padding: 100px 8% 0 8%;
+}
+@media only screen and (max-width: 450px) {
+  #about-information {
+    font-size: 14px;
+    padding: 100px 4% 0 4%
+  }
 }
 @media only screen and (max-width: 600px) {
   #about-information {

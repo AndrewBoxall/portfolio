@@ -1,8 +1,13 @@
 #skills-section {
-  background-color: #161616;
-  box-sizing: border-box;
-  color: white;
+  background-image: linear-gradient(black, #2d2d2d);
   width: 100%;
+  padding-bottom: 400px;
+}
+#skills-section > div {
+  background-color: white;
+  border-radius: 20px;
+  margin: 0 10%;
+  padding: 20px;
 }
 #skills-section h2 {
   color: black;
@@ -14,28 +19,8 @@
   text-align: center;
   width: 100%;
 }
-#top-background {
-  background-color: black;
-  height: 200px;
-  position: relative;
-  width: 100%;
-}
-#bottom-background {
-  height: 300px;
-  position: relative;
-  width: 100%;
-}
-#middle-background {
-  background-color: white;
-  border-radius: 20px;
-  margin: 0 10%;
-  padding: 20px;
-  position: relative;
-  top: -450px;
-}
 .container-row {
   display: flex;
-  flex-wrap: nowrap;
 }
 .container-row div {
   background-color: #db435f;
@@ -43,5 +28,18 @@
   margin: 2px;
   padding: 10px;
   text-align: center;
+  white-space: nowrap;
   width: 100%;
+}
+@media only screen and (max-width: 550px){
+  .container-row div {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .container-row:first-of-type {
+    flex-wrap: wrap;
+  }
+  .container-row:first-of-type div {
+    width: calc(50% - 24px);
+  }
 }

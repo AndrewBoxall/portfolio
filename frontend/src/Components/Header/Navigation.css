@@ -43,26 +43,21 @@
   margin: 0;
   padding: 0;
 }
-.download-link {
-  margin: 0 1vw;
-  padding: 11px 40px 11px 20px;
+.helper-links-menu:hover .download-link .fa-download-icon {
+  animation-name: bounce;
+  animation-duration: 3s;
 }
-.download-link:hover .fa-download-icon {
+#navigation ul li .download-link:hover .fa-download-icon {
   animation-name: bounce;
   animation-duration: 3s;
 }
 .fa-download-icon {
   margin-left: 5px;
-  position: absolute;
   top: 15px;
 }
 .fa-menu-icon {
   color: white;
   font-size: 30px;
-}
-.float-right {
-  float: right;
-  margin-left: auto;
 }
 .helper-links-menu {
   display: flex;
@@ -73,7 +68,12 @@
   margin-left: auto;
   padding: 0;
 }
+.helper-links-menu > li a {
+  margin: 0 10px;
+  padding: 11px 10px 11px 10px;
+}
 .nav-container {
+  align-items: baseline;
   display: flex;
   flex-wrap: nowrap;
   list-style-type: none;
@@ -91,9 +91,9 @@
   margin-right: 10px;
   padding: 2px 0px 2px 20px;
 }
-
 @media only screen and (max-width: 850px) {
   #dropdown-menu {
+    align-items: center;
     display: flex;
   }
   #dropdown-menu:hover  + .bookmark-links-menu {
@@ -136,6 +136,37 @@
     margin: 0;
   }
 }
+@media only screen and (max-width: 450px) {
+  #dropdown-menu {
+    padding: 16px 14px 14px 10px;
+  }
+  #dropdown-menu > p {
+    font-size: 14px;
+  }
+  #dropdown-menu:hover  + .bookmark-links-menu {
+    left: 104px;
+  }
+  #navigation ul li a {
+    font-size: 14px;
+  }
+  .bookmark-links-menu:hover {
+    left: 104px;
+  }
+  .bookmark-links-menu > li {
+    width: 96px;
+  }
+  .fa-menu-icon {
+    font-size: 14px;
+  }
+  .helper-links-menu > li a {
+    margin: 0;
+    padding: 15px 10px 14px 10px;
+  }
+  .site-logo {
+    height: 35px;
+  }
+}
+
 @keyframes bounce {
   25% {top: 10px;}
   50% {top: 15px;}

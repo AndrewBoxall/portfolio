@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import './ProjectExample.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
 
 class ProjectExample extends Component {
   render() {
-    const comingSoon = this.props.wip;
-    let cover;
+    const viewableProject = this.props.openModal;
+    let projectHover;
 
-    if (comingSoon) {
-
+    if (viewableProject) {
+      projectHover = <FontAwesomeIcon className="fa-icon-eye" icon={['fas', 'eye']} />;
+    } else {
+      projectHover = <div className="project-coming-soon">Coming soon</div>
     }
 
     return (
@@ -19,7 +21,7 @@ class ProjectExample extends Component {
             <h3>{this.props.name}</h3>
             {this.props.desc}
           </div>
-          <FontAwesomeIcon className="fa-icon-eye" icon={faEye} />
+          {projectHover}
         </div>
     );
   }

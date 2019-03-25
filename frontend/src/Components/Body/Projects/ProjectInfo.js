@@ -85,12 +85,6 @@ const teacherSubHubSummary = <div className="project-information">
   for empty classes quickly and stress free.</p>
 </div>;
 
-const AlternativeWay = (props) => <div className="project-information">
-  <p>{props.test}A fully functioning online clothing store.<br />
-  Built using a HTML, CSS, LESS and vanilla JS front-end,<br />
-  and a Node, Express JS, Mongo DB back-end.</p>
-</div>;
-
 export {
   toastApparelSummary,
   toastApparelDetailed,

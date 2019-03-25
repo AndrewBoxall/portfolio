@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Testimonial.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
-import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
 
 class Testimonial extends Component {
   render() {
@@ -14,9 +12,9 @@ class Testimonial extends Component {
             <img className="testimonial-img" src={this.props.img} alt="The person who wrote the testimonial"></img>
           </div>
           <div className="testimonial-text-wrapper">
-            <FontAwesomeIcon className="quote-mark" icon={faQuoteLeft} />
+            <FontAwesomeIcon className="quote-mark" icon={['fas', 'quote-left']} />
             <p className="testimonial-quote font-scale">{this.props.quote}</p>
-            <FontAwesomeIcon className="quote-mark float-right" icon={faQuoteRight} />
+            <FontAwesomeIcon className="quote-mark float-right" icon={['fas', 'quote-right']} />
             <h2 className="testimonial-name font-scale">{this.props.name},</h2>
             <p className="testimonial-work font-scale">{this.props.work}</p>
           </div>

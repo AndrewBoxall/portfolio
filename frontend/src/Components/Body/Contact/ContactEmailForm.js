@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './ContactEmailForm.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
 
 class ContactEmailForm extends Component {
   constructor(props){
@@ -14,13 +11,11 @@ class ContactEmailForm extends Component {
       emailAddress: '',
       emailBody: ''
     };
-
     this.sendEmail = this.sendEmail.bind(this);
     this.updateField = this.updateField.bind(this);
   }
 
   sendEmail(e){
-    alert('a value was submitted:');
     e.preventDefault();
 
     fetch('http://localhost:4000/email' , {
@@ -33,8 +28,8 @@ class ContactEmailForm extends Component {
       headers: {
         'Content-type': 'application/json'
       }
-
     });
+    this.setState({senderName: '', emailAddress: '', emailBody: ''});
   }
   updateField(e){
     this.setState({[e.target.name]: e.target.value});
@@ -43,7 +38,7 @@ class ContactEmailForm extends Component {
   render() {
     return (
       <form id="contact-email-form" onSubmit={this.sendEmail}>
-        <div className="flex-row-container">
+        <div className="flex-container">
           <div className="email-data-wrapper">
             <input
               id="email-sender-input"
@@ -53,12 +48,13 @@ class ContactEmailForm extends Component {
               length="25"
               autocomplete="off"
               required
+              value={this.state.senderName}
               onChange={this.updateField}>
             </input>
             <label className="floating-label" htmlFor="email-sender-input">Name</label>
-            <FontAwesomeIcon className="fa-email-icon" icon={faUser} />
+            <FontAwesomeIcon className="fa-email-icon" icon={['fas', 'user']} />
           </div>
-          <div className="email-data-wrapper second-child">
+          <div className="email-data-wrapper">
             <input
               id="email-address-input"
               className="email-form-input"
@@ -66,10 +62,11 @@ class ContactEmailForm extends Component {
               type="email"
               autocomplete="off"
               required
+              value={this.state.emailAddress}
               onChange={this.updateField}>
             </input>
             <label className="floating-label" htmlFor="email-address-input">Email</label>
-            <FontAwesomeIcon className="fa-email-icon" icon={faEnvelope} />
+            <FontAwesomeIcon className="fa-email-icon" icon={['fas', 'envelope']} />
           </div>
         </div>
         <div className="email-data-wrapper">
@@ -80,10 +77,11 @@ class ContactEmailForm extends Component {
             type="text"
             autocomplete="off"
             required
+            value={this.state.emailBody}
             onChange={this.updateField}>
           </textarea>
           <label className="floating-label" htmlFor="email-body-input">Message</label>
-          <FontAwesomeIcon className="fa-email-icon" icon={faEdit} />
+          <FontAwesomeIcon className="fa-email-icon" icon={['fas', 'edit']} />
         </div>
         <button id="send-email" type="submit">SEND</button>
       </form>

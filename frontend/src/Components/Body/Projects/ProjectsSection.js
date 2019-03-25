@@ -5,21 +5,18 @@ import ProjectModal from './ProjectModal';
 import ProjectModalBackground from './ProjectModalBackground';
 
 import {
-  toastApparelSummary,
-  toastApparelDetailed,
-  tustinPilatesSummary,
-  tustinPilatesDetailed,
-  wellnessStudioSummary,
-  wellnessStudioDetailed,
+  toastApparelSummary, toastApparelDetailed,
+  tustinPilatesSummary, tustinPilatesDetailed,
+  wellnessStudioSummary, wellnessStudioDetailed,
   teacherSubHubSummary
 }
 from './ProjectInfo';
 
 import fashionWebsite from '../../../images/fashionWebsite.jpg';
 import toastBanner from '../../../images/fashionWebsiteBanner.jpg';
-import healthWebsite from '../../../images/healthWebsite.jpg';
+import healthWebsite from '../../../images/healthWebsite3.jpg';
 import healthBanner from '../../../images/healthWebsiteBanner.png';
-import pilatesWebsite from '../../../images/pilatesWebsite.jpg';
+import pilatesWebsite from '../../../images/pilatesWebsite2.jpg';
 import pilatesBanner from '../../../images/tustinPilatesBanner.jpg';
 import schoolWebsite from '../../../images/schoolWebsite.png';
 
@@ -58,28 +55,23 @@ class ProjectsSection extends Component {
               desc={toastApparelSummary}
               image={fashionWebsite}
               openModal={this.openModal.bind(this, 'Toast Apparel', toastBanner, toastApparelDetailed)}
-              wip="false"
             />
             <ProjectExample
               name="Tustin Pilates"
               desc={tustinPilatesSummary}
               image={pilatesWebsite}
               openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed)}
-              wip="false"
             />
             <ProjectExample
               name="The Wellness Studio"
               desc={wellnessStudioSummary}
               image={healthWebsite}
               openModal={this.openModal.bind(this, 'The Wellness Studio', healthBanner, wellnessStudioDetailed)}
-              wip="false"
             />
             <ProjectExample
               name="Teacher Sub Hub"
               desc={teacherSubHubSummary}
               image={schoolWebsite}
-              openModal={this.openModal.bind(this, 'Teacher Sub Hub', healthBanner, teacherSubHubSummary)}
-              wip="false"
             />
 
         </div>

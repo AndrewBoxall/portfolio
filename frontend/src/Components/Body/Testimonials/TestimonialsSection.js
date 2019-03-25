@@ -4,9 +4,7 @@ import './TestimonialsSection.css';
 import Testimonial from './Testimonial';
 import TestimonialText from './TestimonialText';
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 import client1 from '../../../images/client1.jpg';
 import client2 from '../../../images/client2.jpg';
@@ -94,7 +92,7 @@ class TestimonialsSection extends Component {
           <div className="leave-a-review">
             <p>Leave a review</p>
             <div>
-              <FontAwesomeIcon className="fa-icon-plus" icon={faPlusCircle} />
+              <FontAwesomeIcon className="fa-icon-plus" icon={['fas', 'plus-circle']} />
             </div>
           </div>
         </div>

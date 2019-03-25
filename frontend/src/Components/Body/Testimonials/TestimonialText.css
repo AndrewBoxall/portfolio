@@ -3,8 +3,7 @@
   border-radius: 5px;
   box-sizing: border-box;
   display: inline-block;
-  float: left;
-  height: 230px;
+  height: 250px;
   margin: 10px;
   padding: 20px 5px 5px 5px;
   position: relative;
@@ -26,36 +25,29 @@
 }
 .testimonial-sm-wrapper > p {
   box-sizing: border-box;
+  font-size: 18px;
   margin: 0;
   padding: 0px 10px;
   width: 100%;
   text-align: center;
 }
-.testimonial-sm-wrapper > p:first-child {
-  font-size: 18px;
-}
 .testimonial-sm-wrapper > p:last-of-type {
-  color: #474747;
   font-size: 16px;
+  color: #474747;
 }
-
 .fa-icon-star {
   color: #ffe016;
   font-size: 20px;
   margin: 5px;
 }
-.float-right {
-  float: right;
-}
-@media only screen and (max-width: 600px) {
-
-}
-@media only screen and (min-width: 600px) {
-
-}
-@media only screen and (min-width: 900px) {
-
-}
-@media only screen and (min-width: 1500px) {
-
+@media only screen and (max-width: 450px) {
+  .testimonial-sm-wrapper > h2 {
+    font-size: 14px;
+  }
+  .testimonial-sm-wrapper > p {
+    font-size: 16px;
+  }
+  .testimonial-sm-wrapper > p:last-of-type {
+    font-size: 14px;
+  }
 }
