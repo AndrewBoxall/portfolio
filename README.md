@@ -15,4 +15,3 @@
 11. Flash a success notification when email or other form submit buttons pressed
 12. Fix when email input is invalid, the floating label will close down over the input and overlap words
 13. Fix testimonial img and font size scaling for mobile
-14. Change href bookmark links to javascript scroll links so they do not alter the URL
