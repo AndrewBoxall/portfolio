@@ -10,7 +10,7 @@ class Header extends Component {
           <div id="about-information">
             <p>
               Hello World! <br /><br />
-              My name is Andrew and I am a developer with a keen interest in both front-end<br />
+              My name is Andrew and I am a developer with a keen interest in both front-end
               and back-end web technologies.<br /><br />
               Thanks for checking out my portfolio and my projects below.<br /><br />
               I look forward to working with you in the future.
