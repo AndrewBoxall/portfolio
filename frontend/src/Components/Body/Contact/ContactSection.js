@@ -10,7 +10,7 @@ class ContactSection extends Component {
       <div id="contact-section">
         <h2>Contact</h2>
         <p>Want to work with me, or just get in touch? Contact me below:</p>
-          <div className="flex-container">
+          <div className="contact-flex-container">
             <ContactEmailForm />
             <ContactDetails />
           </div>
