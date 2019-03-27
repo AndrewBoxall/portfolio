@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Footer.css';
 import scrollToBookmark from '../../javascripts/scrollToBookmark.js';
-import logo from '../../images/ab-logo.png';
+import logo from '../../images/aboxit-logo.png';
 
 class Footer extends Component {
   constructor(props){
@@ -12,10 +12,10 @@ class Footer extends Component {
   render() {
     return (
         <footer id="footer">
-          <div className="col-1">
-            <img className="site-logo" src={logo} alt="website footer logo"></img>
+          <div className="footer-logo-container">
+            <img className="aboxit-logo" src={logo} alt="website footer logo"></img>
           </div>
-          <div className="return-links col-2">
+          <div className="return-links">
             <ul>
               <li><a href="#navigation" onClick={this.scrollToBookmark.bind(this, "navigation")}>Home</a></li>
               <li><a href="#projects-section" onClick={this.scrollToBookmark.bind(this, "projects-section")}>Projects</a></li>

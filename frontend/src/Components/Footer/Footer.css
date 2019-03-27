@@ -2,12 +2,12 @@
   border-top: 1px solid white;
   padding: 20px;
 }
-.col-1 {
+.footer-logo-container {
   float: left;
   width: 7%;
   min-width: 120px;
 }
-.col-2 {
+.return-links {
   float: left;
   width: 50%;
 }
