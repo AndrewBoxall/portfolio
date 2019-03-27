@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import './App.css';
 
 import Header from './Components/Header/Header';
-import HomepageBody from './Components/Body/HomeBody';
+import ProjectsSection from './Components/Body/Projects/ProjectsSection';
+import SkillsSection from './Components/Body/Skills/SkillsSection';
+import TestimonialsSection from './Components/Body/Testimonials/TestimonialsSection';
+import ContactSection from './Components/Body/Contact/ContactSection';
 import Footer from './Components/Footer/Footer';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -15,7 +18,10 @@ class App extends Component {
     return (
         <>
           <Header />
-          <HomepageBody />
+          <ProjectsSection />
+          <SkillsSection />
+          <TestimonialsSection />
+          <ContactSection />
           <Footer />
         </>
     );
