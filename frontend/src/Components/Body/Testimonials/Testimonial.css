@@ -16,47 +16,25 @@
   width: 1920px;
   float: left;
 }
-.testimonial-text-wrapper {
-  box-sizing: border-box;
-  width: 100%;
-}
-.testimonial-image-wrapper {
-  box-sizing: border-box;
-  width: 100%;
-}
 .testimonial-img {
   border-radius: 50%;
   display: block;
   width: 70%;
   height: auto;
   max-width: 320px;
-  margin-right: 50px;
   float: right;
-}
-.testimonial-name {
-  box-sizing: border-box;
-  display: block;
-  font-size: 16px;
-  width: 70%;
-  clear: right;
-  margin: 0;
-  padding: 10px 10px 0 0;
-  text-align: right;
 }
 .testimonial-quote {
   box-sizing: border-box;
   font-size: 16px;
   margin: 0;
-  padding: 5px 10%;
-  width: 90%;
-  margin: 0 5%;
+  padding: 5px 5%;
   text-align: center;
 }
-.testimonial-work {
-  box-sizing: border-box;
+.testimonial-user {
+  clear: right;
   display: block;
   font-size: 16px;
-  width: 70%;
   margin: 0;
   padding: 0 12px 0 0;
   text-align: right;
@@ -65,14 +43,14 @@
   display: inline-block;
   color: #ffe016;
   font-size: 1.5vw;
-  padding: 0 15%;
+  padding: 5px 5% 5px 5%;
 }
 .float-right {
   float: right;
 }
 @media only screen and (max-width: 600px) {
   .font-scale {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @media only screen and (min-width: 600px) {

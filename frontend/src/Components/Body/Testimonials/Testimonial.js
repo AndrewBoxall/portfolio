@@ -15,8 +15,8 @@ class Testimonial extends Component {
             <FontAwesomeIcon className="quote-mark" icon={['fas', 'quote-left']} />
             <p className="testimonial-quote font-scale">{this.props.quote}</p>
             <FontAwesomeIcon className="quote-mark float-right" icon={['fas', 'quote-right']} />
-            <h2 className="testimonial-name font-scale">{this.props.name},</h2>
-            <p className="testimonial-work font-scale">{this.props.work}</p>
+            <h2 className="testimonial-user font-scale">{this.props.name}</h2>
+            <p className="testimonial-user font-scale">{this.props.work}</p>
           </div>
         </div>
       </div>

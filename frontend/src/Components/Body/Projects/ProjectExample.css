@@ -1,29 +1,10 @@
-.fa-icon-eye {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 25%;
-  left: 45%;
-  display: none;
-}
-.project-coming-soon {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 25%;
-  left: 25%;
-  display: none;
-}
 .project-container {
   background-color: black;
   border-bottom: 2px solid white;
-  box-sizing: border-box;
-  display: inline;
+  color: white;
   cursor: pointer;
   margin: 0 20px 70px 0;
   position: relative;
-  float: left;
-  flex-grow: 1;
 }
 .project-container:hover .project-thumbnail-img,
 .project-container:hover .project-info-wrapper {
@@ -32,66 +13,46 @@
 .project-container:hover {
   border-bottom: 2px solid grey;
 }
-.project-container:hover .fa-icon-eye {
+.project-container:hover .project-hover-element  {
   display: block;
-  opacity: 1;
 }
-.project-container:hover .project-coming-soon {
-  display: block;
-  opacity: 1;
-}
-.project-info-wrapper {
-  background-color: black;
+.project-hover-element {
   color: white;
-  margin-top: 10px;
-  padding-left: 5px;
-}
-.project-info-wrapper > h3 {
-  margin: 0;
-}
-
-.project-thumbnail-img {
-  background-color: black;
-  margin: 0;
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  text-align: center;
+  top: 45%;
   width: 100%;
-
 }
-
+.project-thumbnail-img {
+  width: 100%;
+}
 @media only screen and (max-width: 1000px) {
   .project-container {
+    margin: 0 0 70px 0;
     width: 100%;
-    margin: 0 0 100px 0;
   }
 }
 @media only screen and (min-width: 1000px) {
   .project-container {
-    max-width: 47%;
-  }
-  .project-thumbnail-img {
-    height: 280px;
-  }
-}
-
-@media only screen and (min-width: 1300px) {
-  .project-container {
-    max-width: 47%;
-  }
-  .project-thumbnail-img {
-    height: 280px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
-  .project-container {
-    max-width: 30%;
+    max-width: calc(50% - 20px);
   }
   .project-thumbnail-img {
     height: 250px;
   }
 }
+@media only screen and (min-width: 1300px) {
+  .project-container {
+    max-width: calc(33% - 20px);
+  }
+  .project-thumbnail-img {
+    height: 220px;
+  }
+}
 @media only screen and (min-width: 1600px) {
   .project-container {
-    max-width: 23%;
+    max-width: calc(25% - 20px);
   }
   .project-thumbnail-img {
     height: 220px;

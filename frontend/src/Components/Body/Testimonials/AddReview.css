@@ -1,0 +1,113 @@
+#review-form {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-top: -2px;
+  margin-left: -1px;
+  position: absolute;
+  width: 100%;
+}
+#review-form label {
+  background-color: #add2ff;
+  border-right: 1px solid black;
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0;
+  padding: 5px;
+  width: 70px;
+}
+#review-form input {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0px 5px;
+  width: calc(100% - 70px);
+}
+#review-form textarea {
+  box-sizing: border-box;
+  border: none;
+  height: 100px;
+  margin: 0;
+  outline: none;
+  padding: 5px 5px;
+  width: calc(100% - 70px);
+}
+#add-review {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+#add-review p {
+  margin: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+#add-review > div {
+  margin: 10px;
+  text-align: center;
+}
+.fa-icon-minus {
+  color: #fc7f5d;
+  cursor: pointer;
+  font-size: 40px;
+}
+.fa-icon-minus:hover {
+  color: #963918;
+}
+.fa-icon-plus {
+  color: #64dbb5;
+  cursor: pointer;
+  font-size: 40px;
+}
+.fa-icon-plus:hover {
+  color: #189681;
+}
+.review-form-data {
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 5px 10px;
+  padding: 0;
+  display: flex;
+}
+#review-add-button {
+  background-color: #add2ff;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 5px 40px;
+  padding: 5px;
+  display: block;
+  width: calc(100% - 80px);
+}
+#review-rating {
+  direction: rtl;
+  text-align: center;
+  width: 100%;
+}
+.fa-review-star {
+  cursor: pointer;
+  color: #aeb8c4;
+  font-size: 20px;
+  margin: 5px;
+}
+.fa-review-star:hover {
+  color: #ffe016;
+}
+.fa-review-star:hover ~ .fa-review-star {
+  color: #ffe016;
+}
+.toggle-form-display {
+  display: none;
+}
+#review-rating > .stars-clicked {
+  color: #ffe016;
+}
+.stars-clicked ~ .fa-review-star {
+  color: #ffe016;
+}

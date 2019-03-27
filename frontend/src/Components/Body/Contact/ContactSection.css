@@ -2,7 +2,7 @@
   box-sizing: border-box;
   width: 100%;
   display: block;
-  padding: 60px 8%;
+  padding: 60px 8% 150px 8%;
 }
 #contact-section > h2 {
   color: white;
@@ -21,6 +21,9 @@
   display: flex;
 }
 @media only screen and (max-width: 1000px) {
+  #contact-section {
+    padding: 60px 10px 150px 10px;
+  }
   .flex-container {
     flex-wrap: wrap;
   }

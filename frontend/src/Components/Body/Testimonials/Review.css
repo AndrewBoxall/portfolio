@@ -1,0 +1,36 @@
+.fa-icon-star {
+  color: #ffe016;
+  font-size: 20px;
+  margin: 5px;
+}
+.review {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 0 40px 0;
+  position: relative;
+}
+.review > h2 {
+  font-size: 16px;
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.review > p {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0px 5px;
+  text-align: center;
+}
+.review > p:last-of-type {
+  font-size: 14px;
+  color: #474747;
+}
+.rating {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}

@@ -30,7 +30,6 @@ class ProjectsSection extends Component {
       modalImage: '',
       modalDesc: ''
     }
-    this.openModal = this.openModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
   openModal(name, image, description){

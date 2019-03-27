@@ -9,7 +9,8 @@ class ContactEmailForm extends Component {
     this.state = {
       senderName: '',
       emailAddress: '',
-      emailBody: ''
+      emailBody: '',
+      flashSentMessage: ''
     };
     this.sendEmail = this.sendEmail.bind(this);
     this.updateField = this.updateField.bind(this);
@@ -29,10 +30,22 @@ class ContactEmailForm extends Component {
         'Content-type': 'application/json'
       }
     });
-    this.setState({senderName: '', emailAddress: '', emailBody: ''});
+    let confirmEmailSent =
+    <div>
+      <h3>Success!</h3>
+      <p>Your email has been sent.</p>
+    </div>
+
+    this.setState({senderName: '', emailAddress: '', emailBody: '', flashSentMessage: confirmEmailSent});
+    this.flashTimeout = setTimeout(
+      () => this.setState({flashSentMessage: ''}), 5000
+    );
   }
   updateField(e){
     this.setState({[e.target.name]: e.target.value});
+  }
+  componentWillUnmount(){
+    clearTimeout(this.flashTimeout);
   }
 
   render() {
@@ -84,6 +97,7 @@ class ContactEmailForm extends Component {
           <FontAwesomeIcon className="fa-email-icon" icon={['fas', 'edit']} />
         </div>
         <button id="send-email" type="submit">SEND</button>
+        {this.state.flashSentMessage}
       </form>
     );
   }

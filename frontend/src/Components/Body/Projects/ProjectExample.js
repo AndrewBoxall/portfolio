@@ -9,9 +9,9 @@ class ProjectExample extends Component {
     let projectHover;
 
     if (viewableProject) {
-      projectHover = <FontAwesomeIcon className="fa-icon-eye" icon={['fas', 'eye']} />;
+      projectHover = <FontAwesomeIcon icon={['fas', 'eye']} />;
     } else {
-      projectHover = <div className="project-coming-soon">Coming soon</div>
+      projectHover = <div>Coming soon</div>
     }
 
     return (
@@ -21,7 +21,7 @@ class ProjectExample extends Component {
             <h3>{this.props.name}</h3>
             {this.props.desc}
           </div>
-          {projectHover}
+          <div className="project-hover-element">{projectHover}</div>
         </div>
     );
   }

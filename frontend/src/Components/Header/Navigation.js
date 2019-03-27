@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import './Navigation.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import scrollToBookmark from '../../javascripts/scrollToBookmark.js';
 import logo from '../../images/ab-logo.png';
 
 class Navigation extends Component {
+  constructor(props){
+    super(props);
+
+    this.scrollToBookmark = scrollToBookmark.bind(this);
+  }
   render() {
     return (
       <div id="navigation">
@@ -16,18 +21,17 @@ class Navigation extends Component {
             <p>MENU</p>
           </div>
           <ul className="bookmark-links-menu">
-            <li><a className="nav-link" href="#projects-section">Projects</a></li>
-            <li><a className="nav-link" href="#skills-section">Skills</a></li>
-            <li><a className="nav-link" href="#testimonials-section">Testimonials</a></li>
-            <li><a className="nav-link" href="#contact-section">Contact</a></li>
+            <li><a className="nav-link" href="projects-section" onClick={this.scrollToBookmark.bind(this, "projects-section")}>Projects</a></li>
+            <li><a className="nav-link" href="#skills-section" onClick={this.scrollToBookmark.bind(this, "skills-section")}>Skills</a></li>
+            <li><a className="nav-link" href="#testimonials-section" onClick={this.scrollToBookmark.bind(this, "testimonials-section")}>Testimonials</a></li>
+            <li><a className="nav-link" href="#contact-section" onClick={this.scrollToBookmark.bind(this, "contact-section")}>Contact</a></li>
           </ul>
         </div>
 
         <ul className="helper-links-menu">
-          <li><a href="https://github.com/AndrewBoxall">GitHub</a></li>
+          <li><a href="https://github.com/AndrewBoxall" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           <li>
-            <a className="download-link">
-              <span>CV</span>
+            <a id="download-link" href="http://localhost:4000/Andrew Boxall CV.pdf" target="_blank" rel="noopener noreferrer">CV
               <FontAwesomeIcon className="fa-download-icon" icon={['fas', 'file-download']}  />
             </a>
           </li>
@@ -36,5 +40,4 @@ class Navigation extends Component {
     );
   }
 }
-
 export default Navigation;

@@ -1,7 +1,7 @@
 #testimonials-section {
   background-color: white;
   box-sizing: border-box;
-  padding-bottom: 200px;
+  padding-bottom: 310px;
   width: 100%;
 }
 #testimonials-section > h2 {
@@ -34,35 +34,13 @@
 .margin-transition {
   transition: margin-left 4s;
 }
-.leave-a-review {
-  border: 1px solid black;
-  border-radius: 5px;
-  box-sizing: border-box;
-  display: inline-block;
-  width: 100%;
-  float: left;
-  margin: 10px;
-}
-.leave-a-review p {
-  font-size: 18px;
-  margin: 50px 0 0 0;
-  text-align: center;
-}
-.leave-a-review div {
-  margin: 10px;
-  text-align: center;
-}
-.fa-icon-plus {
-  cursor: pointer;
-  font-size: 50px;
-}
-.fa-icon-plus:hover {
-  color: #7fffc7;
-}
-
-.container-row-test {
-  padding: 0 8%;
+.reviews-container  {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0 8%;
+}
+.reviews-container > div {
+  margin: 10px;
 }
 .radial-button {
   margin: 0 45% 0 45%;
@@ -80,29 +58,17 @@
   background-color: yellow;
 }
 @media only screen and (max-width: 900px) {
-  .container-row-test {
-    flex-wrap: wrap;
-    padding: 0 10%;
-  }
-  .container-row-test > div {
+  .reviews-container  > div {
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 900px) {
-  .container-row-test {
-    flex-wrap: wrap;
-    padding: 0 10%;
+  .reviews-container  > div {
+    width: calc(50% - 20px);
   }
-  .container-row-test > div {
-    max-width: 47%;
-    flex: 48%;
-  }
-
 }
 @media only screen and (min-width: 1500px) {
-  .container-row-test {
-    flex-wrap: nowrap;
+  .reviews-container  > div {
+    width: calc(25% - 20px);
   }
-
 }
