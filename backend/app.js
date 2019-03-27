@@ -15,6 +15,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 
 app.use(logger('dev'));
+app.use(express.static('public/staticFiles'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
