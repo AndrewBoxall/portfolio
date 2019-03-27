@@ -3,7 +3,7 @@ import './Navigation.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import scrollToBookmark from '../../javascripts/scrollToBookmark.js';
-import logo from '../../images/ab-logo.png';
+import logo from '../../images/aboxit-logo.png';
 
 class Navigation extends Component {
   constructor(props){
@@ -14,7 +14,7 @@ class Navigation extends Component {
   render() {
     return (
       <div id="navigation">
-        <img className="site-logo" src={logo} alt="website header logo"></img>
+        <img className="aboxit-logo" src={logo} alt="website header logo"></img>
         <div className="nav-container">
           <div id="dropdown-menu">
             <FontAwesomeIcon className="fa-menu-icon" icon={['fas', 'bars']}  />

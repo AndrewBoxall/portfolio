@@ -83,7 +83,7 @@
   margin: 0 1vw;
   padding: 11px 20px;
 }
-.site-logo {
+.aboxit-logo {
   box-sizing: border-box;
   display: inline-block;
   height: 50px;
@@ -169,7 +169,7 @@
   .nav-container {
     padding: 0px;
   }
-  .site-logo {
+  .aboxit-logo {
     height: 35px;
   }
 }
