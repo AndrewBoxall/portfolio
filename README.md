@@ -12,7 +12,6 @@
   <li>Sanatise user imput for forms</li>
   <li>Implement other projects: Host them on same server. Fix visit sight button so it redirects to them.</li>
   <li>Add in response if email fails to hit backend and properly send</li>
-  <li>Removed email subject from frontend so need to remove processing it in backend</li>
 </ul>
 
 # Bugs to fix:
@@ -21,4 +20,6 @@
   <li>Fix when email input is invalid, the floating label will close down over the input and overlap words</li>
   <li>Fix testimonial img and font size scaling for mobile</li>
   <li>Fix when page resizes, contact icons bob up and down</li>
+  <li>Removed email subject from frontend so need to remove processing it in backend</li>
+  <li> Since CV is static file, should just serve it from front end public/static files folder. Not backend one</li>
 </ul>
