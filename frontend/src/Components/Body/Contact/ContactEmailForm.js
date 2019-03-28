@@ -19,7 +19,7 @@ class ContactEmailForm extends Component {
   sendEmail(e){
     e.preventDefault();
 
-    fetch('http://localhost:4000/email' , {
+    fetch('http://localhost:3000/email' , {
       method: "POST",
       mode: "cors",
       body: JSON.stringify({
