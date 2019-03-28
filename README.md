@@ -16,4 +16,5 @@
   <li>Fix when page resizes, contact icons bob up and down</li>
   <li>Implement other projects: Host them on same server. Fix visit sight button so it redirects to them.</li>
   <li>Add in response if email fails to hit backend and properly send</li>
+  <li>Removed email subject from frontend so need to remove processing it in backend</li>
 </ul>
