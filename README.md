@@ -15,7 +15,7 @@
   <li>Removed email subject from frontend so need to remove processing it in backend</li>
 </ul>
 
-# Bugfixes:
+# Bugs to fix:
 <ul>
   <li>Fix 0.5s delay between project modal opening and img on it appearing</li>
   <li>Fix when email input is invalid, the floating label will close down over the input and overlap words</li>
