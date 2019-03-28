@@ -31,7 +31,7 @@ class Navigation extends Component {
         <ul className="helper-links-menu">
           <li><a href="https://github.com/AndrewBoxall" target="_blank" rel="noopener noreferrer">GitHub</a></li>
           <li>
-            <a id="download-link" href="http://localhost:4000/Andrew Boxall CV.pdf" target="_blank" rel="noopener noreferrer">CV
+            <a id="download-link" href="http://aboxit.com:3000/Andrew Boxall CV.pdf" target="_blank" rel="noopener noreferrer">CV
               <FontAwesomeIcon className="fa-download-icon" icon={['fas', 'file-download']}  />
             </a>
           </li>
