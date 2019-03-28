@@ -14,4 +14,6 @@
   <li>Fix when email input is invalid, the floating label will close down over the input and overlap words</li>
   <li>Fix testimonial img and font size scaling for mobile</li>
   <li>Fix when page resizes, contact icons bob up and down</li>
+  <li>Implement other projects: Host them on same server. Fix visit sight button so it redirects to them.</li>
+  <li>Add in response if email fails to hit backend and properly send</li>
 </ul>
