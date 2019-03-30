@@ -12,6 +12,7 @@
   <li>Sanatise user imput for forms</li>
   <li>Implement other projects: Host them on same server. Fix visit sight button so it redirects to them.</li>
   <li>Add in response if email fails to hit backend and properly send</li>
+  <li>Defer loading images, JS and CSS where appropriate for page performance</li>
 </ul>
 
 # Bugs to fix:
