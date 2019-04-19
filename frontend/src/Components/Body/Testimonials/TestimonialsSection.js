@@ -51,8 +51,9 @@ class TestimonialsSection extends Component {
         <p>See what people have to say about me, and leave your own comment.</p>
         <div id="testimonials-carousel">
           <div id="slide-wrapper" className="margin-transition">
-          {this.state.testimonials.map(testimonial => (
+          {this.state.testimonials.map((testimonial, index) => (
             <Testimonial
+              key={index}
               name={testimonial.name}
               work={testimonial.work}
               img={testimonial.img}
@@ -62,8 +63,9 @@ class TestimonialsSection extends Component {
           </div>
         </div>
         <div className="reviews-container">
-          {this.state.reviews.map(reviewer => (
+          {this.state.reviews.map((reviewer, index) => (
             <Review
+              key={index}
               name={reviewer.name}
               work={reviewer.work}
               position={reviewer.position}
