@@ -59,7 +59,7 @@ class ContactEmailForm extends Component {
               name="senderName"
               type="text"
               length="25"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.senderName}
               onChange={this.updateField}>
@@ -73,7 +73,7 @@ class ContactEmailForm extends Component {
               className="email-form-input"
               name="emailAddress"
               type="email"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.emailAddress}
               onChange={this.updateField}>
@@ -88,7 +88,7 @@ class ContactEmailForm extends Component {
             className="email-form-input"
             name="emailBody"
             type="text"
-            autocomplete="off"
+            autoComplete="off"
             required
             value={this.state.emailBody}
             onChange={this.updateField}>
