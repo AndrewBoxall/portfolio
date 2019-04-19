@@ -100,7 +100,7 @@ class AddReview extends Component {
               id="reviewer-message"
               name="reviewerMessage"
               type="text"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.reviewerMessage}
               onChange={this.updateField}>
@@ -113,7 +113,7 @@ class AddReview extends Component {
               name="reviewerName"
               type="text"
               length="25"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.reviewerName}
               onChange={this.updateField}>
@@ -126,7 +126,7 @@ class AddReview extends Component {
               name="reviewerCompany"
               type="text"
               length="25"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.reviewerCompany}
               onChange={this.updateField}>
@@ -139,7 +139,7 @@ class AddReview extends Component {
               name="reviewerPosition"
               type="text"
               length="25"
-              autocomplete="off"
+              autoComplete="off"
               required
               value={this.state.reviewerPosition}
               onChange={this.updateField}>
