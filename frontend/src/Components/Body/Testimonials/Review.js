@@ -6,7 +6,7 @@ class Review extends Component {
   render() {
     let rating = [];
     for (var i = 0; i < this.props.rating; i++){
-      rating.push(<FontAwesomeIcon className="fa-icon-star" icon={['fas', 'star']} />);
+      rating.push(<FontAwesomeIcon className="fa-icon-star" icon={['fas', 'star']} key={i}/>);
     }
     return (
         <div className="review">
