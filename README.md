@@ -2,7 +2,8 @@
 
 # Info:
 
-Hosted on AWS lightsail. Can be viewed by going to http://aboxit.com
+Hosted on AWS lightsail. Can be viewed by going to http://andrewjamesboxall.co.nz
+Previously and potentially still reachable also at http://aboxit.com
 
 # Improvements / required features still to implement:
 <ul>
