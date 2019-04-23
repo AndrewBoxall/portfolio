@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './ProjectExample.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class ProjectExample extends Component {
@@ -26,5 +25,4 @@ class ProjectExample extends Component {
     );
   }
 }
-
 export default ProjectExample;

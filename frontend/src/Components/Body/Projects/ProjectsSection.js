@@ -32,12 +32,13 @@ class ProjectsSection extends Component {
     }
     this.closeModal = this.closeModal.bind(this);
   }
-  openModal(name, image, description){
+  openModal(name, image, description, link){
     this.setState({
       modalOpen: true,
       modalName: name,
       modalImage: image,
-      modalDesc: description
+      modalDesc: description,
+      githubLink: link
     });
   }
   closeModal(){
@@ -53,19 +54,19 @@ class ProjectsSection extends Component {
               name="LaMode Clothing"
               desc={toastApparelSummary}
               image={clothingWebsite}
-              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, toastApparelDetailed)}
+              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, toastApparelDetailed, 'lamode')}
             />
             <ProjectExample
               name="Tustin Pilates"
               desc={tustinPilatesSummary}
               image={pilatesWebsite}
-              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed)}
+              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed, 'tustin-pilates')}
             />
             <ProjectExample
               name="The Wellness Studio"
               desc={wellnessStudioSummary}
               image={healthWebsite}
-              openModal={this.openModal.bind(this, 'The Wellness Studio', healthBanner, wellnessStudioDetailed)}
+              openModal={this.openModal.bind(this, 'The Wellness Studio', healthBanner, wellnessStudioDetailed, 'wellness-studio')}
             />
             <ProjectExample
               name="Teacher Sub Hub"
@@ -75,10 +76,10 @@ class ProjectsSection extends Component {
 
         </div>
         {this.state.modalOpen && <ProjectModalBackground closeModal={this.closeModal} />}
-        {this.state.modalOpen && <ProjectModal name={this.state.modalName} desc={this.state.modalDesc} image={this.state.modalImage} />}
+        {this.state.modalOpen && 
+        <ProjectModal name={this.state.modalName} desc={this.state.modalDesc} image={this.state.modalImage} link={this.state.githubLink}/>}
       </div>
     );
   }
 }
-
 export default ProjectsSection;
