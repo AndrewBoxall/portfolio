@@ -12,13 +12,13 @@ import {
 }
 from './ProjectInfo';
 
-import fashionWebsite from '../../../images/fashionWebsite.jpg';
-import toastBanner from '../../../images/fashionWebsiteBanner.jpg';
+import clothingWebsite from '../../../images/fashionWebsite.jpg';
+import clothingBanner from '../../../images/fashionWebsiteBanner.jpg';
 import healthWebsite from '../../../images/healthWebsite.jpg';
-import healthBanner from '../../../images/healthWebsiteBanner.png';
+import healthBanner from '../../../images/healthWebsiteBanner.jpg';
 import pilatesWebsite from '../../../images/pilatesWebsite.jpg';
 import pilatesBanner from '../../../images/pilatesWebsiteBanner.jpg';
-import schoolWebsite from '../../../images/schoolWebsite.png';
+import schoolWebsite from '../../../images/schoolWebsite.jpg';
 
 class ProjectsSection extends Component {
   constructor(props){
@@ -52,8 +52,8 @@ class ProjectsSection extends Component {
             <ProjectExample
               name="LaMode Clothing"
               desc={toastApparelSummary}
-              image={fashionWebsite}
-              openModal={this.openModal.bind(this, 'LaMode Clothing', toastBanner, toastApparelDetailed)}
+              image={clothingWebsite}
+              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, toastApparelDetailed)}
             />
             <ProjectExample
               name="Tustin Pilates"

@@ -1,19 +1,42 @@
+#codebase {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 20px 5% 20px 0;
+  padding: 20px;
+  text-transform: uppercase;
+  transition: 0.2s;
+  width: 100%;
+}
+#codebase:hover {
+  background-color: rgb(104, 230, 223);
+  box-sizing: border-box;
+  color: black;
+}
 #explore {
   background-color: black;
-  border: none;
+  border: 1px solid black;
+  border-right: none;
   box-sizing: border-box;
   color: white;
   cursor: pointer;
-  font-size: 20px;
-  margin: 20px 5%;
+  font-size: 14px;
+  margin: 20px 0 20px 5%;
   padding: 20px;
   text-transform: uppercase;
-  width: 90%;
+  transition: 0.2s;
+  width: 100%;
 }
 #explore:hover {
-  background-color: grey;
+  background-color: rgb(230, 186, 91);
   box-sizing: border-box;
   color: black;
+}
+.button-flex-container {
+  display: flex;
 }
 .project-modal-container {
   background-color: white;
@@ -29,11 +52,24 @@
   z-index: 1;
 }
 .project-modal-container p {
-  padding-left: 20px;
+  padding: 0 20px;
 }
 .project-modal-img {
-  height: 200px;
+  height: auto;
   width: 100%;
+}
+@media only screen and (max-width: 600px){
+  #explore {
+    border-bottom: none;
+    border-right: 1px solid black;
+    margin: 20px 5% 0 5%;
+  }
+  #codebase {
+    margin: 0 5% 20px 5%;
+  }
+ .button-flex-container {
+  flex-wrap: wrap;
+ }
 }
 @media only screen and (max-width: 900px){
   .project-modal-container {
