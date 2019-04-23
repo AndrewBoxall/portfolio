@@ -10,15 +10,14 @@ const toastApparelSummary = <div className="project-information">
 </div>;
 
 const toastApparelDetailed = <div className="project-information">
-  <p><em>Toast Apparel</em> is an online fashion retail store.<br /><br />
+  <p><em>LaMode clothing</em> is an online retail clothing store.<br /><br />
   The goal of this project was to learn the technology behind creating and operating an online store.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
     <li>The use of cookies to store a customer cart.</li>
-    <li>The use of session and authentication methods.</li>
-    <li>Authentication and encryption tools to protect customer information.</li>
-    <li>Database technology to manage orders and store purchase information.</li>
+    <li>The use of authentication and encryption methods to protect customer information.</li>
+    <li>Database technology to manage orders and store purchase history.</li>
   </ul>
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
@@ -40,10 +39,8 @@ const tustinPilatesDetailed = <div className="project-information">
   </p>
   <p>Including:</p>
   <ul className="project-goals">
-    <li>The use of reusable components.</li>
-    <li>Single page application.</li>
-    <li>Authentication and encryption tools to protect customer information.</li>
-    <li>Database technology to manage client session bookings.</li>
+    <li>Create a static website.</li>
+    <li>Create API's to manage data flow.</li>
   </ul>
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
@@ -56,12 +53,12 @@ const tustinPilatesDetailed = <div className="project-information">
 
 const wellnessStudioSummary = <div className="project-information">
   <p>A staff focus web application used to manage a small physical therapy business.<br /><br />
-  Everything from client information, appointment scheduling, and user profiles.</p>
+  Store client information to a database. Schedule appointments to a calendar. Login and manage user profiles.</p>
 </div>;
 
 const wellnessStudioDetailed = <div className="project-information">
   <p><em>The Wellness Studio</em> is a web application used to manage a small physical therapy business.<br /><br />
-  The goal of this project was to make a real world example that could be used in a work place.
+  The goal of this project was to make a real world backend business application that could be used in a work place.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
