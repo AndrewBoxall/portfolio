@@ -50,10 +50,10 @@ class ProjectsSection extends Component {
         <p>Check out an ever expanding catalog of my current and future projects</p>
         <div className="project-examples-wrapper">
             <ProjectExample
-              name="Toast Apparel"
+              name="LaMode Clothing"
               desc={toastApparelSummary}
               image={fashionWebsite}
-              openModal={this.openModal.bind(this, 'Toast Apparel', toastBanner, toastApparelDetailed)}
+              openModal={this.openModal.bind(this, 'LaMode Clothing', toastBanner, toastApparelDetailed)}
             />
             <ProjectExample
               name="Tustin Pilates"
