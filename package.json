@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client": "cd frontend && npm start",
+    "client": "cd frontend && serve -s build -l 80",
     "server": "cd backend && npm start",
     "start": "concurrently --kill-others \"npm run server\" \"npm run client\" &"
   },
