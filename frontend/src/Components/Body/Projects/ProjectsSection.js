@@ -52,15 +52,15 @@ class ProjectsSection extends Component {
         <div className="project-examples-wrapper">
             <ProjectExample
               name="LaMode Clothing"
-              desc={toastApparelSummary}
+              desc={lamodeSummary}
               image={clothingWebsite}
-              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, toastApparelDetailed, 'lamode')}
+              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, lamodeDetailed, 'lamode')}
             />
             <ProjectExample
               name="Amour du Corps Pilates"
-              desc={tustinPilatesSummary}
+              desc={amourSummary}
               image={pilatesWebsite}
-              openModal={this.openModal.bind(this, 'Amour du Corps Pilates', pilatesBanner, tustinPilatesDetailed, 'amour-du-corps')}
+              openModal={this.openModal.bind(this, 'Amour du Corps Pilates', pilatesBanner, amourDetailed, 'amour-du-corps')}
             />
             <ProjectExample
               name="The Wellness Studio"

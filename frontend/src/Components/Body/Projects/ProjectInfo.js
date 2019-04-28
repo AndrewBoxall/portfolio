@@ -4,14 +4,15 @@ import './ProjectInfo.css';
 //TODO//
 //Implement a database to retrieve this information from.
 //This works fine while project count is small.
-const toastApparelSummary = <div className="project-information">
-  <p>A fully functioning online clothing store.<br />
+const lamodeSummary = <div className="project-information">
+  <p>Lamode Clothing is a fully functioning online clothing store.<br />
   Including user sessions and customer cart data.</p>
 </div>;
 
-const toastApparelDetailed = <div className="project-information">
+const lamodeDetailed = <div className="project-information">
   <p><em>LaMode clothing</em> is an online retail clothing store.<br /><br />
-  The goal of this project was to learn the technology behind creating and operating an online store.
+  The goal of this project was to learn React JS, as well as what technologies and securities are behind creating
+   and operating an online store.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
@@ -22,32 +23,32 @@ const toastApparelDetailed = <div className="project-information">
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
     <li>HTML, CSS & Javascript.</li>
-    <li>LESS CSS.</li>
     <li>Node JS with Express.</li>
     <li>Mongo DB.</li>
   </ul>
 </div>;
 
-const tustinPilatesSummary = <div className="project-information">
-  <p>A small business website for an independant pilates instructor.<br /><br />
+const amourSummary = <div className="project-information">
+  <p>A personal business website for an independant pilates instructor.<br /><br />
   Used to increase online presence and advertise class offers to clients.</p>
 </div>;
 
-const tustinPilatesDetailed = <div className="project-information">
-  <p><em>Tustin Pilates</em> is a pilates website to drive business and clients to an independant instructor.<br /><br />
-  The goal of this project was to learn React JS and create a single page application.
+const amourDetailed = <div className="project-information">
+  <p><em>Amour du Corps Pilates</em> is a pilates website to drive business and clients to an independant instructor.<br /><br />
+  The goal of this project was to use a different web stack, PHP and .NET to create a single page application 
+  and to host the project and gain familiarity with Microsoft Azure.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
-    <li>Create a static website.</li>
-    <li>Create API's to manage data flow.</li>
+    <li>Use MS Azure to host the completed project.</li>
+    <li>Develope a website in .Net and Azure.</li>
   </ul>
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
     <li>HTML, CSS & Javascript.</li>
-    <li>React.</li>
-    <li>Node JS with Express.</li>
-    <li>Mongo DB.</li>
+    <li>.Net</li>
+    <li>PHP</li>
+    <li>Azure</li>
   </ul>
 </div>;
 
@@ -83,10 +84,10 @@ const teacherSubHubSummary = <div className="project-information">
 </div>;
 
 export {
-  toastApparelSummary,
-  toastApparelDetailed,
-  tustinPilatesSummary,
-  tustinPilatesDetailed,
+  lamodeSummary,
+  lamodeDetailed,
+  amourSummary,
+  amourDetailed,
   wellnessStudioSummary,
   wellnessStudioDetailed,
   teacherSubHubSummary
