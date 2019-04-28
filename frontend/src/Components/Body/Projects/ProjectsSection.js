@@ -5,8 +5,8 @@ import ProjectModal from './ProjectModal';
 import ProjectModalBackground from './ProjectModalBackground';
 
 import {
-  toastApparelSummary, toastApparelDetailed,
-  tustinPilatesSummary, tustinPilatesDetailed,
+  lamodeSummary, lamodeDetailed,
+  amourSummary, amourDetailed,
   wellnessStudioSummary, wellnessStudioDetailed,
   teacherSubHubSummary
 }
