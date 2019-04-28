@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 class ProjectModal extends Component {
   render() {
     let githubLink = "https://github.com/AndrewBoxall/" + this.props.link;
-    let visitLink = "http://localhost:3000/" + this.props.link;
+    let visitLink = "http://localhost:80/" + this.props.link;
     return (
         <div className="project-modal-container">
           <img src={this.props.image} alt="project thumbnail" className="project-modal-img"></img>
