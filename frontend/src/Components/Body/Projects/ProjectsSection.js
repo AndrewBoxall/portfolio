@@ -57,10 +57,10 @@ class ProjectsSection extends Component {
               openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, toastApparelDetailed, 'lamode')}
             />
             <ProjectExample
-              name="Tustin Pilates"
+              name="Amour du Corps Pilates"
               desc={tustinPilatesSummary}
               image={pilatesWebsite}
-              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed, 'tustin-pilates')}
+              openModal={this.openModal.bind(this, 'Amour du Corps Pilates', pilatesBanner, tustinPilatesDetailed, 'amour-du-corps')}
             />
             <ProjectExample
               name="The Wellness Studio"
