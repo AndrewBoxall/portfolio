@@ -16,7 +16,7 @@ const lamodeDetailed = <div className="project-information">
   </p>
   <p>Including:</p>
   <ul className="project-goals">
-    <li>The use of cookies to store a customer cart.</li>
+    <li>The use of cookies to store a session id to match customers to their secure cart.</li>
     <li>The use of authentication and encryption methods to protect customer information.</li>
     <li>Database technology to manage orders and store purchase history.</li>
   </ul>
@@ -25,45 +25,46 @@ const lamodeDetailed = <div className="project-information">
     <li>HTML, CSS & Javascript.</li>
     <li>Node JS with Express.</li>
     <li>Mongo DB.</li>
+    <li>AWS lightsail server with custom domain.</li>
   </ul>
 </div>;
 
-const amourSummary = <div className="project-information">
-  <p>A personal business website for an independant pilates instructor.<br /><br />
+const tustinPilatesSummary = <div className="project-information">
+  <p>A business website for an individual pilates instructor or small practice.<br /><br />
   Used to increase online presence and advertise class offers to clients.</p>
 </div>;
 
-const amourDetailed = <div className="project-information">
-  <p><em>Amour du Corps Pilates</em> is a pilates website to drive business and clients to an independant instructor.<br /><br />
-  The goal of this project was to use a different web stack, PHP and .NET to create a single page application 
-  and to host the project and gain familiarity with Microsoft Azure.
+const tustinPilatesDetailed = <div className="project-information">
+  <p><em>Tustin Pilates</em> is a pilates website to drive business and clients to an independant instructor
+  or small practice.<br /><br />
+  The goal of this project was to create a single page application using Angular,
+  and host the project through an AWS s3 bucket.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
-    <li>Use MS Azure to host the completed project.</li>
-    <li>Develope a website in .Net and Azure.</li>
+    <li>Using an AWS CI/CD pipe to deploy code from Github to an AWS s3 bucket.</li>
+    <li>Learn Angular and SCSS.</li>
   </ul>
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
-    <li>HTML, CSS & Javascript.</li>
-    <li>.Net</li>
-    <li>PHP</li>
-    <li>Azure</li>
+    <li>HTML, SCSS & Javascript.</li>
+    <li>Angular</li>
+    <li>AWS CodeBuild & s3.</li>
   </ul>
 </div>;
 
-const wellnessStudioSummary = <div className="project-information">
-  <p>A staff focus web application used to manage a small physical therapy business.<br /><br />
+const studioTustinSummary = <div className="project-information">
+  <p>A fully featured web application to be used by staff to manage a small physical therapy business.<br /><br />
   Store client information to a database. Schedule appointments to a calendar. Login and manage user profiles.</p>
 </div>;
 
-const wellnessStudioDetailed = <div className="project-information">
-  <p><em>The Wellness Studio</em> is a web application used to manage a small physical therapy business.<br /><br />
+const studioTustinDetailed = <div className="project-information">
+  <p><em>Studio Tustin</em> is a web application used to manage a small physical therapy business.<br /><br />
   The goal of this project was to make a real world backend business application that could be used in a work place.
   </p>
   <p>Including:</p>
   <ul className="project-goals">
-    <li>Single page application.</li>
+    <li>CI/CD from Github to Azure App Services.</li>
     <li>Calandar model to book clients.</li>
     <li>Authentication and encryption tools to protect customer and staff information.</li>
     <li>Database technology to manage logins.</li>
@@ -71,24 +72,24 @@ const wellnessStudioDetailed = <div className="project-information">
   </ul>
   <p className="">Technologies used:</p>
   <ul className="project-tech-stack">
-    <li>HTML, CSS & Javascript.</li>
-    <li>React.</li>
-    <li>Node JS with Express.</li>
+    <li>HTML, SCSS & Javascript.</li>
+    <li>.NET & Angular</li>
+    <li>Azure App Services.</li>
     <li>MS SQL DB.</li>
   </ul>
 </div>;
 
 const teacherSubHubSummary = <div className="project-information">
-  <p>A react native application used to help schools reach relief teachers
+  <p>A mobile application used to help schools reach relief teachers
   for empty classes quickly and stress free.</p>
 </div>;
 
 export {
   lamodeSummary,
   lamodeDetailed,
-  amourSummary,
-  amourDetailed,
-  wellnessStudioSummary,
-  wellnessStudioDetailed,
+  tustinPilatesSummary,
+  tustinPilatesDetailed,
+  studioTustinSummary,
+  studioTustinDetailed,
   teacherSubHubSummary
 }

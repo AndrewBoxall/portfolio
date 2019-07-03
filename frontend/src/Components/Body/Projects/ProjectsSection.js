@@ -6,8 +6,8 @@ import ProjectModalBackground from './ProjectModalBackground';
 
 import {
   lamodeSummary, lamodeDetailed,
-  amourSummary, amourDetailed,
-  wellnessStudioSummary, wellnessStudioDetailed,
+  tustinPilatesSummary, tustinPilatesDetailed,
+  studioTustinSummary, studioTustinDetailed,
   teacherSubHubSummary
 }
 from './ProjectInfo';
@@ -57,16 +57,16 @@ class ProjectsSection extends Component {
               openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, lamodeDetailed, 'lamode')}
             />
             <ProjectExample
-              name="Amour du Corps Pilates"
-              desc={amourSummary}
+              name="Tustin Pilates"
+              desc={tustinPilatesSummary}
               image={pilatesWebsite}
-              openModal={this.openModal.bind(this, 'Amour du Corps Pilates', pilatesBanner, amourDetailed, 'amour-du-corps')}
+              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed, 'tustin-pilates')}
             />
             <ProjectExample
-              name="The Wellness Studio"
-              desc={wellnessStudioSummary}
+              name="Studio Tustin"
+              desc={studioTustinSummary}
               image={healthWebsite}
-              openModal={this.openModal.bind(this, 'The Wellness Studio', healthBanner, wellnessStudioDetailed, 'wellness-studio')}
+              openModal={this.openModal.bind(this, 'Studio Tustin', healthBanner, studioTustinDetailed, 'studiotustin')}
             />
             <ProjectExample
               name="Teacher Sub Hub"
