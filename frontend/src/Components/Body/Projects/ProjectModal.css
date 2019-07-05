@@ -5,7 +5,7 @@
   color: black;
   cursor: pointer;
   font-size: 14px;
-  margin: 20px 5% 20px 0;
+  margin: 5px 5% 10px 0;
   outline: none;
   padding: 20px;
   text-align: center;
@@ -27,7 +27,7 @@
   color: white;
   cursor: pointer;
   font-size: 14px;
-  margin: 20px 0 20px 5%;
+  margin: 5px 0 10px 5%;
   outline: none;
   padding: 20px;
   text-align: center;
