@@ -28,17 +28,20 @@ class ProjectsSection extends Component {
       modalOpen: false,
       modalName: '',
       modalImage: '',
-      modalDesc: ''
+      modalDesc: '',
+      modalWebLink: '',
+      modalGitLink: ''
     }
     this.closeModal = this.closeModal.bind(this);
   }
-  openModal(name, image, description, link){
+  openModal(name, image, description, link, github){
     this.setState({
       modalOpen: true,
       modalName: name,
       modalImage: image,
       modalDesc: description,
-      githubLink: link
+      modalWebLink: link,
+      modalGitLink: github
     });
   }
   closeModal(){
@@ -54,19 +57,19 @@ class ProjectsSection extends Component {
               name="LaMode Clothing"
               desc={lamodeSummary}
               image={clothingWebsite}
-              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, lamodeDetailed, 'lamode')}
+              openModal={this.openModal.bind(this, 'LaMode Clothing', clothingBanner, lamodeDetailed, "http://localhost:3000/lamode", 'lamode')}
             />
             <ProjectExample
               name="Tustin Pilates"
               desc={tustinPilatesSummary}
               image={pilatesWebsite}
-              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed, 'tustin-pilates')}
+              openModal={this.openModal.bind(this, 'Tustin Pilates', pilatesBanner, tustinPilatesDetailed, "http://tustin-pilates.s3-website-ap-southeast-2.amazonaws.com/", 'tustin-pilates')}
             />
             <ProjectExample
               name="Studio Tustin"
               desc={studioTustinSummary}
               image={healthWebsite}
-              openModal={this.openModal.bind(this, 'Studio Tustin', healthBanner, studioTustinDetailed, 'studiotustin')}
+              openModal={this.openModal.bind(this, 'Studio Tustin', healthBanner, studioTustinDetailed, "https://studiotustin.azurewebsites.net/", 'studiotustin')}
             />
             <ProjectExample
               name="Teacher Sub Hub"
@@ -77,7 +80,7 @@ class ProjectsSection extends Component {
         </div>
         {this.state.modalOpen && <ProjectModalBackground closeModal={this.closeModal} />}
         {this.state.modalOpen && 
-        <ProjectModal name={this.state.modalName} desc={this.state.modalDesc} image={this.state.modalImage} link={this.state.githubLink}/>}
+        <ProjectModal name={this.state.modalName} desc={this.state.modalDesc} image={this.state.modalImage} link={this.state.modalWebLink} github={this.state.modalGitLink} />}
       </div>
     );
   }
