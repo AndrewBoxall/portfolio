@@ -9,7 +9,7 @@ class ProjectModal extends Component {
     return (
         <div className="project-modal-container">
           <img src={this.props.image} alt="project thumbnail" className="project-modal-img"></img>
-          <p>{this.props.desc}</p>
+          {this.props.desc}
           <div className="button-flex-container">
             <a id="explore" href={this.props.link} target="_blank" rel="noopener noreferrer">
             Visit website
