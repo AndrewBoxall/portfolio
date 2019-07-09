@@ -10,9 +10,7 @@ class Navigation extends Component {
 
     this.scrollToBookmark = scrollToBookmark.bind(this);
   }
-  componentDidMount(){
-    console.log('%PUBLIC_URL%: ');
-  }
+  
   render() {
     return (
       <div id="navigation">
